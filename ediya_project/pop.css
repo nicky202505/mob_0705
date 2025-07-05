@@ -1,0 +1,28 @@
+ 
+    .popup{
+     position: fixed;
+    width: 420px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 999999;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    font-size: 24px;
+    box-shadow: 8px 8px 16px #746e6e83;   
+    }
+
+    .popup button{
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+    color: black;
+    position: absolute;
+    right: 60px;
+    font-size: 20px; 
+    top: 140px; 
+    padding-bottom: 15px ;  
+    }
