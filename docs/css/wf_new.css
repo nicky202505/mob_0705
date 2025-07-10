@@ -1,11 +1,11 @@
-* {
-    font-family: 'Noto Sans KR', 'Noto Sans SC', '나눔고딕', NanumGothic, '맑은 고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+
+* {    
+    body {font-family: 'SUIT', sans-serif;}
 }
 
 .wrap {
-    width: 100%;
-    margin-top: 40px;   
-    background-image:url(../images/beach.png) ; 
+    width: 100%; 
+    margin-top: 40px; 
 }
 
 
@@ -21,70 +21,81 @@ header {
     height: 140px;
     margin: auto;
     display: grid;
-    grid-template-rows: 40px auto;
+    grid-template-rows: 40px auto; 
+    grid-template-columns: auto 200px; 
+    padding-left: 100px; 
+    border: 1px solid red;  
+    box-sizing: border-box; 
 }
 
 .ci {
     grid-column: 1/-1;
     grid-row: 2/-1; 
     display:flex;     
-    justify-content: center; 
+    justify-content:left;  
     align-items: center; 
     height: 100px ;    
+} 
+
+.search { 
+    grid-column:2/-1; 
+    width: 200px; 
+    height: 40px ; 
+    border: 1px solid red;   
+    margin-left: 400px; 
 }
+
+
 
 .utility {
     grid-row: 1;
     grid-column: 1; 
     display: flex ; 
-    justify-content: flex-end; 
+    justify-content: flex-end;      
+    font-size: 1.2em;
 } 
 
 .utility ul {
-    display: flex;
-}
+    display: flex; 
+    }
  
 .utility ul li {
-    width: 100px;
+    width: 110px;
     height: 40px;
-    text-align: center;
     color: #13235d;
     line-height: 40px;
-    text-align: center;
-    font-size: 1em;  
-}
+    text-align: right; 
+    }
 
 .utility ul li a {
     text-decoration: none;
 }
 
-.search {
-    width: 156px;
-    box-sizing: border-box;
-    color: #13235d;
-    line-height: 40px;
-    text-align: left;
-    background-color: mediumspringgreen;
-}
+
 
 nav {
     position: absolute;
-    top: 160px ; 
+    top: 180px ; 
     left: 0;
-    width: 100%;
-    height: 600px;
+    width: 100%;  
+    height: auto; 
     z-index: 100; 
-    margin-top: 20px;    
-}
+    margin-top: 20px;   
+    font-size: 1.5em;   
+    border: 1px solid red; 
+} 
+
 
 
 ul.gnb {
-    width: 100%;
-    max-width: 1180px;
+    width: 100%; 
+    max-width: 1180px; 
     height: 40px;
     margin: 0 auto;
-    display: flex;  
-}
+    display: flex;   
+    border: 1px solid red; 
+} 
+
 
 
 .gnb>li {
@@ -94,13 +105,16 @@ ul.gnb {
     text-align: center;
     line-height: 40px;
     list-style: none;
-    position: relative;
+    position: relative;  
 }
 
-.gnb>li a {
+.gnb>li>a {
     color: #13235d;
-    text-decoration: none;
-    font-size: 1em;
+    text-decoration: none ; 
+} 
+
+.gnb>li>a:hover {
+    text-decoration:underline 3px #13235d;  
 }
 
 .dep2 {
@@ -116,31 +130,36 @@ ul.gnb {
 .dep2 li {
     width: 100%;
     text-align: center;
-    list-style: none;
+    list-style: none; 
+    margin-top: 10px ; 
 }
 
-.dep2 li a {
-    color: #13235d;
+.dep2 li>a {
+    color: #13235d;  
+    text-decoration: none;
 }
 
 .gnb:hover .dep2 {
-    height: 200px;
-}
+    height: 280px; 
+} 
 
 
-.nav:hover .w100 {
-    height: 300px;
-}
+
 
 .w100 {
     transition: height 0.5s;
-    background-color: rgba(194, 50, 129, 0.432);
     height: 0;
     width: 100%;
-    position: absolute;
-    top: 50px;
-
+    position: absolute;   
+    top: 50px;           
 }
+
+.nav:hover .w100 {
+    width: 100% ; 
+    height: auto;     
+    box-shadow: #13235d; 
+}
+
 
 /* 메인 */
 
@@ -152,14 +171,15 @@ main {
 
 .banner {
     width: 100%;
-    height: 620px;
+    height: 1400px; 
     background-color: yellow;
     margin: auto;
     margin-top: 80px;
 }
 
 .banner {
-    background-image: url('../images/banner02.jpg');
+    background-image:url(../images/iceberg.jpg);
+    /* url('../images/banner02.jpg'); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -185,7 +205,7 @@ main {
 }
 
 .content1 {
-    background-image: url(../images/coffeelab.jpg);
+    background-image: url(../images/service.gif); 
     background-repeat: no-repeat;
     background-position: center center; 
     background-size: cover;
