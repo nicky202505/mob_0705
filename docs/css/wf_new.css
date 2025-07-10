@@ -4,7 +4,8 @@
 
 .wrap {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 40px;   
+    background-image:url(../images/beach.png) ; 
 }
 
 
@@ -21,9 +22,7 @@ header {
     margin: auto;
     display: grid;
     grid-template-rows: 40px auto;
-
 }
-
 
 .ci {
     grid-column: 1/-1;
@@ -31,7 +30,7 @@ header {
     display:flex;     
     justify-content: center; 
     align-items: center; 
-    height: 100px ;  
+    height: 100px ;    
 }
 
 .utility {
@@ -39,7 +38,6 @@ header {
     grid-column: 1; 
     display: flex ; 
     justify-content: flex-end; 
-
 } 
 
 .utility ul {
@@ -47,13 +45,13 @@ header {
 }
  
 .utility ul li {
-    width: 110px;
+    width: 100px;
     height: 40px;
     text-align: center;
     color: #13235d;
     line-height: 40px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1em;  
 }
 
 .utility ul li a {
@@ -76,7 +74,7 @@ nav {
     width: 100%;
     height: 600px;
     z-index: 100; 
-    margin-top: 20px;   
+    margin-top: 20px;    
 }
 
 
@@ -92,8 +90,6 @@ ul.gnb {
 .gnb>li {
     width: 18%;
     height: 40px;
-    /*       background-color: #13235d;
- */
     white-space: nowrap;
     text-align: center;
     line-height: 40px;
@@ -159,11 +155,11 @@ main {
     height: 620px;
     background-color: yellow;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .banner {
-    background-image: url('../images/banner.png');
+    background-image: url('../images/banner02.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -175,12 +171,8 @@ main {
 .contents {
     width: 100%;
     max-width: 1180px;
-    /*  background-color: aquamarine;   */
-    /* 배경 삽입 후 삭제 */
     margin: auto;
     margin-top: 40px;
-    border: 1px solid red;
-    background-color: aqua;
 }
 
 .content1 {
@@ -189,15 +181,13 @@ main {
     max-width: 1180px;
     height: 600px;
     box-sizing: border-box;
-    /*     background: blue ;        
- */
     margin: auto;
 }
 
 .content1 {
     background-image: url(../images/coffeelab.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; 
     background-size: cover;
 
 }
@@ -220,8 +210,6 @@ main {
 .des_box1 {
     width: 560px;
     height: 560px;
-    /*  background-color: yellow;
- */
     padding: 60px;
     box-sizing: border-box;
     position: absolute;
@@ -260,15 +248,12 @@ p {
     width: 1180px;
     height: 600px;
     position: relative;
-    /*     background: rgb(0, 255, 76);
- */
     box-sizing: border-box;
-    margin: auto;
-
+    margin: auto; 
 }
 
 .content2 {
-    background-image: url(../images/coffeelab.jpg);
+    background-image: url(../images/dream_factory.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
