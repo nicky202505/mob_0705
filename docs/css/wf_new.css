@@ -1,9 +1,9 @@
-* {
-    body {
-        font-family: 'SUIT', sans-serif;
-        font-size: 1em;
-    }
+
+body{
+    font-family: "Noto Sans", sans-serif; 
 }
+
+
 
 .wrap {
     width: 100%;
@@ -234,20 +234,23 @@ main {
 
 /* 컨텐츠 섹션 */
 
-.contents {
+contents {
     position: relative;
-    width: 1440px;
+    width: 100% ; 
+    width:1440px;
     margin-top: 40px;
     height: 2000px;
-    display: flex;
+    display: flex;   
+    margin: auto ;  
+    border: 1px solid red; 
 }
 
 .conbox {
-    width: 1220px;
-    height: 1900px;
+    width: 1150px;
+    height: 1900px; /* 수정 */
     margin-top: 0;
-    border: 1px solid red;
-
+    border: 1px solid red;  
+    margin: auto ; 
 }
 
 .floatbox {
