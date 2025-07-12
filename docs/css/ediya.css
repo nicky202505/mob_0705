@@ -1,5 +1,6 @@
-* {
-    font-family: "Noto Sans", sans-serif;
+
+*{
+  font-family: "Noto Sans", sans-serif; 
 }
 
 
@@ -44,9 +45,8 @@ header {
     height: 40px;
     margin-top: 24px;
     margin-left: -60px;
-    /*     box-shadow: ;
- */
-}
+/*     box-shadow: ;
+ */}
 
 .search {
     width: 240px;
@@ -65,14 +65,14 @@ input.search {
     color: white;
     padding-left: 40px;
     border-radius: 20px;
-    border: 3px solid #13235d;
+    border : 3px solid #13235d; 
     transition: background 0.2s;
 }
 
 .icon {
     position: absolute;
     left: 15px;
-    margin-top: 5px;
+    margin-top: 5px; 
     z-index: 100;
 }
 
@@ -80,7 +80,7 @@ input.search {
 .search:focus,
 .search:active {
     background: #fff;
-    outline: none;
+    outline: none; 
 }
 
 
@@ -91,8 +91,8 @@ input.search {
     grid-column: 1/-1;
     display: flex;
     justify-content: flex-end;
-    font-size: 1em;
-    margin-left: auto;
+    font-size: 1em ;  
+    margin-left:auto; 
 }
 
 .utility ul {
@@ -115,178 +115,167 @@ input.search {
 
 
 nav {
-    position: relative;
+    position: relative;     
     top: auto;
     width: 100%;
+    max-width: 1480px;
+    margin: auto;
     height: auto;
     z-index: 300;
     margin-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.5em;    
+  }
+
+  /* 1) 기본 GNB */
+.gnb {
+  display: flex;
+  list-style: none;
+  background: #2950dd50;
+  border-radius: 2.5px;
+  margin: 20px auto 0;
+  padding: 0;
+  max-width: 1440px;
 }
 
-
-
-ul.gnb {
-    width: 100%;
-    max-width: 1440px;
-    height: 40px;
-    margin: auto;
-    display: flex;
-    background-color: #2950dd50;
-    border-radius: 2.5px;
-
+/* 각 메뉴 아이템을 상대위치로 */
+.gnb > li {
+  position: relative;
+  flex: 1;
+  text-align: center;
 }
 
-
-ul.gnb>li {
-    width: 186px;
-    height: 40px;
-    white-space: nowrap;
-    text-align: center;
-    line-height: 40px;
-    list-style: none;
-    position: relative;
-    flex-grow: 1;
+.gnb > li > a {
+  display: block;
+  padding: 10px 0;
+  color: #13235d;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
+/* 2) 서브메뉴(.dep2) 초기 상태 */
 .dep2 {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.5s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;                      /* 전체 너비 */
+  background: rgba(255,255,255,0.95);/* 반투명 배경 */
+  max-width: none;
+  height: 0;                         /* 접힌 상태 */
+  overflow: hidden;
+  transition: height 0.3s ease;
+  display: flex;
+  justify-content: center;          
+  padding: 0;
+  list-style: none;
+  z-index: 150;
 }
 
-ul.gnb:hover .dep2 {
-    height: 500px;
-}
-
-ul.gnb>li>a {
-    text-decoration: none;
-}
-
-
-
-
-.dep2 {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.5s;
-}
-
-
-
+/* 서브메뉴 아이템 */
 .dep2 li {
-    width: 100%;
-    text-align: center;
-    list-style: none;
-    margin-top: 10px;
+  margin: 0 20px;
+}
+.dep2 li a {
+  display: block;
+  padding: 8px 0;
+  color: #13235d;
+  text-decoration: none;
 }
 
-.dep2>li>a {
-    color: #13235d;
-    text-decoration: none;
-    z-index: 500;
+/* 3) 부모 li 호버 시 펼치기 */
+.gnb > li:hover .dep2 {
+  height: 250px;    /* 서브항목 높이에 맞춰 조정 */
 }
 
 
 
-.w100 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    transform: none;
-    width: 200vw;
-    height: 0;
-    transition: height 0.5s;
 
-    background-color: #2950dd50;
-
+  .w100 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: none; 
+  width: 100vw;
+  height: 0;
+  transition: height 0.5s; 
+  z-index: 150;         /* nav(300) > .w100(150) > banner(100) */
+  background-color: #2950dd50; 
+  
 }
 
 
 nav:hover .w100 {
-    height: 500px;
-    transform: translateX(-50%);
-    top: 0; }
-
-/* 메인 */
+  height: 500px;        
+}
+ 
 
 
-.banner {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 40%;
-    /* 종횡비 설정 */
-    overflow: hidden;
-    /* 잘린 부분 감춤 */
-    margin-top: 40px;
-    position: relative;
-    /* 이미 선언되어 있지만, z-index를 먹이려면 position이 필요합니다 */
-    z-index: 100;
-    /* nav·.w100보다 낮은 값 */
+
+/* 메인 */  
+
+
+
+ .banner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 40%;                /* 종횡비 설정 */
+  overflow: hidden;                /* 잘린 부분 감춤 */
+  margin-top: 40px;
+  position: relative;   /* 이미 선언되어 있지만, z-index를 먹이려면 position이 필요합니다 */
+  z-index: 100;         /* nav·.w100보다 낮은 값 */
 }
 
-.banner img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: auto;
-    height: 100%;
-    min-width: 100%;
-    transform: translateX(-50%);
-    object-fit: cover;
-    /* 비율 유지하며 영역 가득 채우기 */
-    object-position: center center;
-}
+ .banner img {
+  position: absolute;
+  top: 0; left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  transform: translateX(-50%);
+  object-fit: cover;               /* 비율 유지하며 영역 가득 채우기 */
+  object-position: center center; }
 
 
 
-/* 컨텐츠 섹션 */
+/* 컨텐츠 섹션 */  
 
 .contents {
-    width: 100%;
+    width: 100% ; 
     width: 1440px;
-    margin-top: 40px;
-    display: flex;
-    margin: auto;
+    margin-top: 40px;     
+    display: flex;   
+    margin: auto ;    
     border: 1px solid red;
 }
 
 .conbox {
     width: 1000px;
-    height: 1900px;
-    /* 수정 */
-    margin-top: 40px;
-    border: 1px solid red;
+    height: 1900px; /* 수정 */
+    margin-top: 40px ; 
+    border: 1px solid red;     
+} 
+
+.content1, .content2, .content3{
+    width: 100%; 
+    max-width: 1200px ; 
+    height:500px ; 
+    margin-bottom:40px ; 
+    border:1px solid red;  
+ }  
+
+.con_title1, .con_title2, .con_title3{ 
+    width: 160px ; 
+    height: 40px ; 
+    border-radius: 0 0 25px 25px ;  
+    margin: auto; 
+    background-color: #2950ddbc ;   
+    z-index: 100 ; 
 }
 
-.content1,
-.content2,
-.content3 {
-    width: 100%;
-    max-width: 1200px;
-    height: 500px;
-    margin-bottom: 40px;
-    border: 1px solid red;
-}
-
-.con_title1,
-.con_title2,
-.con_title3 {
-    width: 160px;
-    height: 40px;
-    border-radius: 0 0 25px 25px;
-    margin: auto;
-    background-color: #2950ddbc;
-    z-index: 100;
-}
-
-.content1 {
-    background-image: url(../images/con_img1.png);
+.content1{
+    background-image:url(../images/con_img1.png) ; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover ;    
 }
 
 
@@ -295,12 +284,12 @@ nav:hover .w100 {
 
 .floatbox {
     position: sticky;
-    top: 20px;
+    top: 20px ; 
     margin-left: auto;
     width: 122px;
     height: 780px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
     border: 1px solid red;
     padding-top: 40px;
 }
