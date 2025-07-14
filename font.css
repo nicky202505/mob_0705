@@ -6,9 +6,9 @@ html {
 *{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  font-weight: /* .. */ ;
   font-style: normal;
 }
-
 
 
 
@@ -82,7 +82,8 @@ input.search {
     position: absolute;
     left: 15px;
     margin-top: 5px;
-    z-index: 100; }
+    z-index: 100;
+}
 
 .search:hover,
 .search:focus,
@@ -105,7 +106,7 @@ input.search {
 
 .utility ul {
     display: flex;
-    width: 480px;
+    width: 480px; 
     font-size: 1.6rem; 
 }
 
@@ -113,13 +114,13 @@ input.search {
     width: 120px;
     height: 40px;
     line-height: 40px;
-    text-align: center;  
-    }
+    text-align: center; 
+    list-style: none ;
+}
 
 .utility ul li a {
     text-decoration: none;
-    color: #666666; 
-    font-size: 1.6rem; 
+    color: #333;
 }
 
 
@@ -131,7 +132,8 @@ nav {
     height: auto;
     z-index: 300;
     margin-top: 40px;
-    
+    font-size: 2.4em;
+
 }
 
 
@@ -145,8 +147,7 @@ ul.gnb {
     background-color: #2950dd50;
     border-radius: 2.5px;
     box-shadow: 6px 6px 20px  #2950dd50;  
-    font-size: 2.4rem;  
-    font-weight: 500 ;  
+    font-size: 2.4rem ; 
 
 }
 
@@ -160,16 +161,14 @@ ul.gnb>li {
     list-style: none;
     position: relative;
     flex-grow: 1;
-    font-weight: 500 ; 
 }
 
 .dep2 {
     position: relative;
     height: 0;
     overflow: hidden;
-    transition: height 0.5s; 
-    font-size: 2.0rem; 
-    font-weight: 500 ;
+    transition: height 0.5s;
+    font-size: 2.4rem;
 }
 
 ul.gnb:hover .dep2 {
@@ -177,9 +176,10 @@ ul.gnb:hover .dep2 {
 }
 
 ul.gnb>li>a {
-    color: #333; 
-    text-decoration: none; 
-}  
+    text-decoration: none;
+}
+
+
 
 
 .dep2 {
@@ -199,7 +199,7 @@ ul.gnb>li>a {
 }
 
 .dep2>li>a {
-    color: #333; 
+    color: #13235d;
     text-decoration: none;
     z-index: 500;
 }
@@ -215,7 +215,7 @@ ul.gnb>li>a {
     height: 0;
     transition: height 0.5s; 
     background-color: #2950dd50; 
-    box-shadow: inset 6px -6px 2px rgba(200, 207, 154, 0.2), inset -6px -7px 2px rgba(200, 207, 154, 0.2)
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -240,11 +240,8 @@ nav:hover .w100 {
     /* 잘린 부분 감춤 */
     margin-top: 40px;
     position: relative;
-    z-index: 100;  
-    box-shadow:0px -3px 2px rgb(222, 222, 132), 0px 3px 2px rgb(202, 202, 99); 
-
-
-
+    z-index: 100; 
+    box-shadow: 4px 4px 20px 5px rgba(220, 228, 146, 0.5); 
 }
 
 .banner img {
@@ -257,7 +254,7 @@ nav:hover .w100 {
     transform: translateX(-50%);
     object-fit: cover;
     /* 비율 유지하며 영역 가득 채우기 */
-    object-position: center center;  
+    object-position: center center; 
    
 }
 
@@ -267,47 +264,45 @@ nav:hover .w100 {
 
 .contents {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     margin-top: 40px;
     display: flex;
     margin: auto;
 }
 
 .conbox {
-    width: 1000px;
+    width: 1440px;
     height: 1900px;
     /* 수정 */
-    margin-top: 40px;       
+    margin-top: 40px;
+    margin-left: 240px ; 
   }
 
 .content1,
 .content2,
 .content3 {
     width: 100%;
-    max-width: 1000px;
-    height: 500px; 
+    max-width: 1440px;
+    height: 500px;
     margin-bottom: 100px;
     border-radius: 10px;
-    box-shadow: -5px 2px rgb(222, 222, 132), 0px 5px 2px rgb(202, 202, 99); 
-        
+    box-shadow: 4px 4px 5px rgba(220, 228, 146, 0.5); 
 }
 
 .con_title1,
 .con_title2,
 .con_title3 {
-    width: 200px;
-    height: 45px;
+    width: 160px;
+    height: 40px;
     border-radius: 0 0 25px 25px;
     margin: auto;
-    background-color: #13235d;
+    background-color: #fff; 
     z-index: 100;
-    text-align: center; 
+    text-align: center;  
     line-height: 40px; 
-    box-shadow: 4px 4px 5px #777777a3;
-    font-size: 2.4rem;  
-    font-weight: 500 ;  
-    color:  #eaf107; 
-} 
+    box-shadow: 4px 4px 5px #777777a3; 
+    font-size: 2.4rem ; 
+}
 
 .content1 {
     background-image: url(../images/conimg1_1440.png); 
@@ -338,7 +333,7 @@ nav:hover .w100 {
     display: flex;
     flex-wrap: wrap;
     padding-top: 40px;
-   z-index: 1000;
+    z-index: 1000;
 }
 
 .float01,
@@ -346,22 +341,19 @@ nav:hover .w100 {
 .float03,
 .float04,
 .float05 {
-    width: 120px;
-    height: 120px;
-    background: #13235d ; 
+    width: 130px;
+    height: 130px;
+    background: #13235d;  
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center; 
-    box-shadow: 4px 4px 15px #77777741,
-    -4px -4px 15px lab(50.03% 0 -0.01 / 0.506);  
-    flex-wrap: wrap;
- }
+    box-shadow: 4px 4px 20px #777777b5;       
+}
 
-.floatbox a {   
+.floatbox a {
+    color: #fff; 
     font-size: 2.4rem; 
-    color: #eaf107; 
-    font-weight: 600 ; 
 }
 
 
