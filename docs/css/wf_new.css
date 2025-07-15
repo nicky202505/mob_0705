@@ -261,8 +261,7 @@ nav:hover .w100 {
     transform: translateX(-50%);
     object-fit: cover;
     /* 비율 유지하며 영역 가득 채우기 */
-    object-position: center center;
-
+    object-position: center center;  
 }
 
 
