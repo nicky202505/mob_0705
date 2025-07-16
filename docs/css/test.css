@@ -180,9 +180,12 @@ ul.gnb:hover .dep2 {
 
 ul.gnb>li>a {
     color: #333;
-    text-decoration: none;
-}
+    text-decoration: none;  
+} 
 
+ul.gnb>li>a:hover {
+      text-decoration: underline 3px ; 
+}
 
 .dep2 {
     position: relative;
@@ -218,7 +221,7 @@ ul.gnb>li>a {
     transition: height 0.5s;
     background-color: #2950dd50;
     box-shadow: inset 6px -6px 2px rgba(200, 207, 154, 0.2), inset -6px -7px 2px rgba(200, 207, 154, 0.2)
-    /* 호버 이전 */
+        /* 호버 이전 */
 }
 
 
@@ -261,9 +264,23 @@ nav:hover .w100 {
     transform: translateX(-50%);
     object-fit: cover;
     /* 비율 유지하며 영역 가득 채우기 */
-    object-position: center center;
+    object-position: center center;  
+} 
 
+.icon { 
+  position: absolute ; 
+  top: 0;
+  width : 50px;  
+  height : 100px ; 
+  z-index: 10000 ; 
+  left : 1800px ; 
+  margin-top : 300px ;   
 }
+
+
+
+
+
 
 
 
@@ -274,15 +291,15 @@ nav:hover .w100 {
     max-width: 1440px;
     margin-top: 40px;
     display: flex;
-    margin: auto;  
-     
+    margin: auto;
+
 }
 
 .conbox {
     width: 1000px;
     height: 1900px;
     /* 수정 */
-    margin-top: 40px;      
+    margin-top: 40px;  
 }
 
 .content1,
@@ -293,43 +310,45 @@ nav:hover .w100 {
     height: 500px;
     margin-bottom: 100px;
     border-radius: 10px;
-    box-shadow: -5px 2px rgb(222, 222, 132), 0px 5px 2px rgb(202, 202, 99);   
-    position: relative ;  
+    box-shadow: -5px 2px rgb(222, 222, 132), 0px 5px 2px rgb(202, 202, 99);
+    position: relative;
 }
 
 
 
-.more1, .more2, .more3{
-    position: absolute ; 
-    width: 800px ; 
-    height: 0 ;  
-    background: rgba(232, 230, 189, 0.425);       
-    border-radius: 10px; 
-   /*  border: 1px solid red ;    */
-    margin: auto;     
-    margin-left: 80px ;
-    margin-top: 40px ;    
-    opacity: 0 ;  
-    transition: all 0.5s ease-on-out ;    
-    font-size : 36px ; 
-    color : yellow ;       
-    padding : 20px ; 
-    text-align : justify ;   
+.more1,
+.more2,
+.more3 {
+    position: absolute;
+    width: 800px;
+    height: 0;
+    background: rgba(232, 230, 189, 0.425);
+    border-radius: 10px;
+    /*  border: 1px solid red ;    */
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 0 ; 
+    opacity: 0;
+    transition: height 0.5s ease-in-out ; 
+    font-size: 36px;
+    color: yellow;
+    padding: 60px;
+    text-align: justify;
 }
 
-.content1:hover .more1{
-    opacity : 1 ; 
-    height: 380px ;    
+.content1:hover .more1 {
+    opacity: 1;
+    height: 380px;
 }
 
-.content2:hover .more2{
-    opacity : 1 ; 
-    height: 380px ;    
+.content2:hover .more2 {
+    opacity: 1;
+    height: 380px;
 }
-     
-.content3:hover .more3{
-    opacity : 1 ; 
-    height: 380px ;    
+
+.content3:hover .more3 {
+    opacity: 1;
+    height: 380px;
 }
 
 
@@ -340,13 +359,13 @@ nav:hover .w100 {
     height: 45px;
     border-radius: 0 0 25px 25px;
     margin: auto;
-    background-color: #13235d;     
+    background-color: #13235d;
     text-align: center;
     line-height: 40px;
-    box-shadow: 4px 4px 5px #777777a3, -4px 4px 5px #777777a3 ;
+    box-shadow: 4px 4px 5px #777777a3, -4px 4px 5px #777777a3;
     font-size: 2.4rem;
     font-weight: 500;
-    color: #eaf107; 
+    color: #eaf107;   
 }
 
 .con_title_b {
@@ -359,22 +378,22 @@ nav:hover .w100 {
     /* z-index: 100; */
     text-align: center;
     line-height: 40px;
-    box-shadow: 4px -4px 5px #777777a3, -4px -4px 5px #777777a3 ;
+    box-shadow: 4px -4px 5px #777777a3, -4px -4px 5px #777777a3;
     font-size: 2.4rem;
     font-weight: 500;
 }
 
 .con_title_b a {
     text-decoration: underline;
-    color: #eaf107;
+    color: #eaf107;   
 }
 
 
 .content1 {
     background-image: url(../images/conimg1_1440.png);
     background-repeat: no-repeat;
-    background-size: cover; 
-} 
+    background-size: cover;
+}
 
 
 
