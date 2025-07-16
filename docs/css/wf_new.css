@@ -308,13 +308,13 @@ nav:hover .w100 {
     border-radius: 10px;
     /*  border: 1px solid red ;    */
     margin: auto;
-    margin-left: 80px;
-    margin-top: 40px;
+    margin-left: 40px;
+    margin-top: 0 ; 
     opacity: 0;
-    transition: all 0.5s ease-on-out;
+    transition: height 0.5s ease-in-out ; 
     font-size: 36px;
     color: yellow;
-    padding: 20px;
+    padding: 60px;
     text-align: justify;
 }
 
