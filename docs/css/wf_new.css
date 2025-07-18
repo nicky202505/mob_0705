@@ -15,15 +15,24 @@ html {
 
 .wrap {
     width: 100%;
-    margin-top: 20px;
+    position: absolute ; 
+} 
+   
+
+
+.header_wrap{
+    background-color: white;
+    width: 100%; 
+    position: fixed ;  
+    z-index : 1000 ;  
 }
 
 
 
-header {
-    width: 100%;
-    height: auto;
-}
+
+
+  
+    
 
 .container {
     width: 100%;
@@ -45,9 +54,17 @@ header {
     height: 100px;
 }
 
-.search_wrap {
-    grid-column: 2/-1;
-    grid-row: 2/3;
+.search_box{ 
+     grid-column: 2/-1;
+/*     grid-auto-flow: 2/-1;
+ */    grid-row: 2/3;  
+}
+
+
+
+
+.search_wrap { 
+    position: relative;   
     width: 240px;
     height: 40px;
     margin-top: 46px;
@@ -71,7 +88,7 @@ input.search {
     height: 100%;
     background: #eae8efe3;
     font-size: 16px;
-    color: white;
+    color: #666 ; 
     padding-left: 40px;
     border-radius: 20px;
     border: 3px solid #13235d;
@@ -82,7 +99,7 @@ input.search {
 .icon {
     position: absolute;
     left: 15px;
-    margin-top: 5px;
+    margin-top: 15px;
     z-index: 100;
 }
 
@@ -101,7 +118,7 @@ input.search {
     grid-column: 1/-1;
     display: flex;
     justify-content: flex-end;
-    font-size: 1em;
+    font-size: 1.8em;
     margin-left: auto;
 }
 
@@ -238,24 +255,20 @@ nav:hover .w100 {
 
 
 .banner {
-    position: relative;
+    position: relative ; 
     width: 100%;
     height: 0;
     padding-top: 40%;
     /* 종횡비 설정 */
     overflow: hidden;
     /* 잘린 부분 감춤 */
-    margin-top: 40px;
-    position: relative;
+    margin-top: 300px;
     z-index: 100;
-    box-shadow: 0px -3px 2px rgb(222, 222, 132), 0px 3px 2px rgb(202, 202, 99);
-
-
-
+    box-shadow: 0px -3px 2px rgb(222, 222, 132), 0px 3px 2px rgb(202, 202, 99);  
 }
 
 .banner img {
-    position: absolute;
+    position: absolute ; 
     top: 0;
     left: 50%;
     width: auto;
@@ -268,14 +281,20 @@ nav:hover .w100 {
 }
 
 .icon_event { 
-  position: absolute ; 
-  top: 0;
+  position: absolute  ;    
   width : 50px;  
-  height : 100px ; 
-  z-index: 10000 ; 
+  height : 100px ;  
   left : 1900px ; 
-  margin-top : 500px ;   
+  top : 300px ;     
+  z-index : 500 ;   
 }
+
+
+.icon_event img{   
+    width: 400% ;      
+    height: auto ; 
+    display : block ;    
+    }
 
 
 /* 컨텐츠 섹션 */
@@ -291,9 +310,8 @@ nav:hover .w100 {
 
 .conbox {
     width: 1000px;
-    height: 1900px;
-    /* 수정 */
-    margin-top: 40px;  
+    height: 1800px;
+    margin-top: 40px;   
 }
 
 .content1,
@@ -325,9 +343,12 @@ nav:hover .w100 {
     opacity: 0;
     transition: height 0.5s ease-in-out ; 
     font-size: 36px;
-    color: yellow;
+    color: white ; 
+    font-weight: 600px;
     padding: 60px;
     text-align: justify;
+    line-height : 2.88em ;
+
 }
 
 .content1:hover .more1 {
@@ -448,5 +469,5 @@ nav:hover .w100 {
 footer {
     width: 100%;
     background-color: #13235d;
-    height: 300px;
+    height: 400px;
 }
