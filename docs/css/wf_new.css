@@ -247,12 +247,26 @@ nav:hover .w100 {
     height: 300px;
     transform: translateX(-50%);
     top: 0;
-    /* 호버 이후 */
+    /* 호버 이후 */ 
 }
 
 /* 메인 */
 
 
+.menu_sticker{
+  position: fixed ;    
+  width : 50px;  
+  height : 100px ;  
+  left : 200px ; 
+  top : 300px ;     
+  z-index : 0 ;   
+} 
+
+.menu_sticker img{   
+    width: 500% ;      
+    height: auto ; 
+    display : block ;    
+    }
 
 
 .banner {
@@ -278,16 +292,16 @@ nav:hover .w100 {
     transform: translateX(-50%);
     object-fit: cover;
     /* 비율 유지하며 영역 가득 채우기 */
-    object-position: center center;  
+    object-position: center center;   
 }
 
-.icon_event { 
-  position: absolute  ;    
+.icon_event {  
+  position: fixed ;    
   width : 50px;  
   height : 100px ;  
-  left : 1900px ; 
-  top : 300px ;     
-  z-index : 500 ;   
+  left : 2100px ; 
+  top : 340px ;     
+  z-index : 1000 ;   
 }
 
 
@@ -302,17 +316,17 @@ nav:hover .w100 {
 
 .contents {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1440px;    
+    height: auto ; 
     margin-top: 40px;
     display: flex;
-    margin: auto;
-
+    margin: auto; 
 }
 
 .conbox {
     width: 1000px;
-    height: 1800px;
-    margin-top: 40px;   
+    height: 1840px ;
+    margin-top: 40px;    
 }
 
 .content1,
@@ -430,20 +444,19 @@ nav:hover .w100 {
 
 .floatbox {
     position: sticky;
-    top: 20px;
+    top: 100px;
     margin-left: auto;
     width: 122px;
-    height: 780px;
+    height: 580px;
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 40px;
+    flex-wrap: wrap;     
+    padding-top: 120px;
 }
 
 .float01,
 .float02,
-.float03,
-.float04,
-.float05 {
+.float03
+{
     width: 120px;
     height: 120px;
     background: #13235d;
@@ -469,5 +482,5 @@ nav:hover .w100 {
 footer {
     width: 100%;
     background-color: #13235d;
-    height: 400px;
+    height: 250px;
 }
