@@ -253,20 +253,14 @@ nav:hover .w100 {
 /* 메인 */
 
 
-.menu_sticker{
-  position: fixed ;    
-  width : 50px;  
-  height : 100px ;  
-  left : 200px ; 
-  top : 300px ;     
-  z-index : 0 ;   
-} 
 
-.menu_sticker img{   
-    width: 500% ;      
-    height: auto ; 
-    display : block ;    
-    }
+
+
+
+
+  
+
+
 
 
 .banner {
@@ -277,12 +271,10 @@ nav:hover .w100 {
     /* 종횡비 설정 */
     overflow: hidden;
     /* 잘린 부분 감춤 */
-    margin-top: 300px;
-    z-index: 100;
-    box-shadow: 0px -3px 2px rgb(222, 222, 132), 0px 3px 2px rgb(202, 202, 99);  
-}
+    margin-top: 340px;
+    z-index: 100;}
 
-.banner img {
+    .banner img {
     position: absolute ; 
     top: 0;
     left: 50%;
@@ -292,27 +284,70 @@ nav:hover .w100 {
     transform: translateX(-50%);
     object-fit: cover;
     /* 비율 유지하며 영역 가득 채우기 */
-    object-position: center center;   
-}
+    object-position: center center; }   
 
+    .arrow{
+        position: absolute ; 
+        width: 100px ; 
+        height: auto ; 
+        left : 1700px ;  
+        top : 650px ; 
+    }
+
+    .arrow img {
+        width : 150% ; 
+        height: auto ; 
+        display : block ; 
+        z-index : 1000 ; 
+    }
+ 
+ 
 .icon_event {  
-  position: fixed ;    
-  width : 50px;  
+  position: absolute ;    
+  width : 100px;  
   height : 100px ;  
   left : 2100px ; 
-  top : 340px ;     
-  z-index : 1000 ;   
+  top : 120px ;     
 }
 
 
 .icon_event img{   
-    width: 400% ;      
+    width: 300% ;      
     height: auto ; 
     display : block ;    
     }
 
+.menu_sticker{
+  position: fixed ;    
+  width : 100px;  
+  height : 100px ;  
+  left : 2100px ; 
+  top : 500px ;  
+} 
 
-/* 컨텐츠 섹션 */
+.menu_sticker img{   
+    width: 300% ;      
+    height: auto ; 
+    display : block ;    
+    }
+
+.menu_icon{
+  position: fixed ;    
+  width : 100px;  
+  height : 100px ;  
+  left : 200px ; 
+  top : 500px ;     
+}
+
+.menu_icon img{
+    width: 300% ;      
+    height: auto ; 
+    display : block ;     
+}
+
+
+/* 컨텐츠 섹션 */ 
+
 
 .contents {
     width: 100%;
