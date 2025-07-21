@@ -4,5 +4,5 @@ document.querySelector('.popup').style.display='none' ;
 
 
 document.getElementById('arrowScroll').addEventListener('mouseenter', function(e) {
-  window.scrollBy({ top: 900, left: 0, behavior: 'smooth' });
+  window.scrollBy({ top: 920, left: 0, behavior: 'smooth' });
 });

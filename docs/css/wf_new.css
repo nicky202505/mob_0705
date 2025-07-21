@@ -6,7 +6,6 @@ html {
 
 * {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 
@@ -25,7 +24,7 @@ html {
     background-color: white;
     width: 100%; 
     position: fixed ;  
-    z-index : 1000 ;  
+    z-index : 2000 ;  
 }
 
 
@@ -222,7 +221,7 @@ ul.gnb>li>a:hover {
 }
 
 .dep2>li>a {
-    color: #333;
+    color: #333 ; 
     text-decoration: none;
     z-index: 500;
 }
@@ -237,14 +236,14 @@ ul.gnb>li>a:hover {
     width: 200vw;
     height: 0;
     transition: height 0.5s;
-    background-color: #2950dd50;
+    background-color: #fbfafa;
     box-shadow: inset 6px -6px 2px rgba(200, 207, 154, 0.2), inset -6px -7px 2px rgba(200, 207, 154, 0.2)
         /* 호버 이전 */
 }
 
 
 nav:hover .w100 {
-    height: 300px;
+    height: 350px;
     transform: translateX(-50%);
     top: 0;
     /* 호버 이후 */ 
@@ -256,25 +255,19 @@ nav:hover .w100 {
 
 
 
-
-
-  
-
-
-
-
-.banner {
+    .banner {
     position: relative ; 
     width: 100%;
     height: 0;
     padding-top: 40%;
-    /* 종횡비 설정 */
-    overflow: hidden;
-    /* 잘린 부분 감춤 */
-    margin-top: 340px;
-    z-index: 100;}
+   /*  종횡비 설정  */  
+     overflow: hidden; 
+     /* 잘린 부분 감춤 */
+     margin-top: 340px; }
 
-    .banner img {
+
+
+     .banner img {
     position: absolute ; 
     top: 0;
     left: 50%;
@@ -285,6 +278,8 @@ nav:hover .w100 {
     object-fit: cover;
     /* 비율 유지하며 영역 가득 채우기 */
     object-position: center center; }   
+
+
 
     .arrow{
         position: absolute ; 
@@ -394,7 +389,7 @@ nav:hover .w100 {
     transition: height 0.5s ease-in-out ; 
     font-size: 36px;
     color: white ; 
-    font-weight: 600px;
+    font-weight: 600;
     padding: 60px;
     text-align: justify;
     line-height : 2.88em ;
