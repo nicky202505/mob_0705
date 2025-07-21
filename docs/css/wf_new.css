@@ -511,6 +511,33 @@ nav:hover .w100 {
 
 footer {
     width: 100%;
-    background-color: #13235d;
-    height: 250px;
+    background-color: #323233;
+    height: 280px; 
+    display : grid ;  
+    grid-template-rows: 2fr 5fr ;         
+    grid-template-columns : 5fr 2fr ;  
+    } 
+
+footer>ul {
+    display: flex ; 
+    grid-row : 1/2 ;   
+    grid-column: 1/-1;
+    border-bottom: 1px solid  rgb(151, 148, 159); 
+    color: white ; 
+    font-size : 18px ; 
+    margin : auto ;  
+    align-items : center ; 
+}
+
+footer>ul>li{
+    margin: 15px ; 
+} 
+
+.present{
+    color: white ; 
+    text-align: center; 
+    grid-row : 2/3;   
+    grid-column: 1/2;     
+    font-size : 18px ;  
+    line-height : 2.88em;  
 }
