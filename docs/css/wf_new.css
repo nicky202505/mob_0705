@@ -509,35 +509,71 @@ nav:hover .w100 {
 
 /* footer  */
 
-footer {
-    width: 100%;
-    background-color: #323233;
-    height: 280px; 
-    display : grid ;  
-    grid-template-rows: 2fr 5fr ;         
-    grid-template-columns : 5fr 2fr ;  
-    } 
-
-footer>ul {
-    display: flex ; 
-    grid-row : 1/2 ;   
-    grid-column: 1/-1;
-    border-bottom: 1px solid  rgb(151, 148, 159); 
-    color: white ; 
-    font-size : 18px ; 
-    margin : auto ;  
-    align-items : center ; 
-}
-
-footer>ul>li{
-    margin: 15px ; 
+footer{
+    width: 100% ; 
+    height: 280px ; 
+    background-color: #483d3d; 
 } 
 
-.present{
-    color: white ; 
-    text-align: center; 
-    grid-row : 2/3;   
-    grid-column: 1/2;     
-    font-size : 18px ;  
-    line-height : 2.88em;  
+.foot{
+    width: 100% ; 
+    max-width: 1200px;  
+    height: 280px ; 
+    margin: auto;  
+    display: grid ;  
+    grid-template-rows: 40px 240px ;
+    grid-template-columns: 1000px 200px ;      
 }
+
+.foot > ul { 
+    grid-row : 1/2 ; 
+    grid-column : 1/2 ; 
+    display : flex ;   
+    font-size : 16px ; 
+    margin-top: 20px;
+    margin: auto ;      
+    padding : 10px ;  
+    align-items: center;
+}
+
+.foot > ul > li {
+     font-size : 16px ; 
+     padding: 10px ;  
+     color : white ;   
+     align-items: center;     
+     line-height: 40px ;
+}
+
+.combo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 200px; 
+    height: 40px ; 
+    margin-top: 20px ; 
+}
+
+.present{
+    grid-row : 2/3 ; 
+    grid-column : 1/2 ; 
+    font-size : 16px ; 
+    margin-top : 20px ;     
+    box-sizing: border-box ; 
+    text-align : center ;  
+    color: white ;        
+}
+
+.present p{
+    line-height: 40px ; 
+}
+.present img {
+    padding : 20px ; 
+    width : 300px ; 
+    height: 40px ; 
+}
+
+
+
+
+
+
+
