@@ -9,9 +9,7 @@ html {
     font-style: normal;
 }
 
-/* *{
-    border: 1px solid red;
-} */
+
 
 
 .wrap {
@@ -23,7 +21,7 @@ html {
 
 .header_wrap{
     
-    background-color: white;
+    background-color: white; 
     width: 100%; 
     position: fixed ;  
     z-index : 2000 ;  
@@ -285,10 +283,10 @@ nav:hover .w100 {
 
     .arrow{
         position: absolute ; 
-        width: 300px ; 
+        width: 200px ; 
         height: auto ; 
-        left : 1700px ;  
-        top : 650px ; 
+        left : 1050px ;  
+        top : 660px ; 
     }
 
     .arrow img {
@@ -300,7 +298,7 @@ nav:hover .w100 {
  
  
 .icon_event {  
-  position: absolute ;    
+  position: absolute ;   
   width : 250px;  
   height : auto ;  
   left : 2100px ; 
@@ -309,21 +307,17 @@ nav:hover .w100 {
 
 
 .icon_event img{   
+    position: absolute ; 
     width: 100% ;      
     height: auto ; 
-    display : block ;    
+    display : block ;      
     }
-
-
-
-
-
 
 /* 컨텐츠 섹션 */ 
 
 .bigbox{
     width: 100% ; 
-    max-width: 1800px ;   
+    max-width: 1920px ;   
     margin: auto ; 
     display : flex ; 
     position: relative ; 
@@ -332,36 +326,72 @@ nav:hover .w100 {
 .iconbox{
   position: sticky ; 
   top: 100px ; 
-  height : 500px ;    
+  height : 600px ;    
   padding-top: 120px ; 
+  text-align: center; 
+  font-size: 3.2rem; 
+  font-weight: 500 ;
+  color : #13235d; 
+ 
 }
 
 .menu_icon{  
   width : 200px;  
   height : 200px ;  
   left : 0;   
-  padding : 0 ;  
+  padding : 0 ;   
+  text-align : center ; 
 }
+
+
+
 
 .menu_icon img{
     width: 100% ;      
-    height: auto ;     
+    height: auto ;      
+    
  }
 
 .chatube{
-  position: sticky ;    
+  position: sticky ;  
+  top : 100px ;   
   width : 200px;  
-  height : 200px ;  
-  margin-top: 20px ; 
-  padding-top: 40px ; 
-  right : 0 ;   
+  height : 200px ;   
+  padding: 0; 
+  right : 0 ;    
+  align-items: center; 
+
+
 } 
 
 .chatube img{   
     width: 100% ;      
     height: auto ; 
-    display : block ;        
+    display : block ;             
+    }  
+
+.play{
+        position : absolute; 
+        width: 60px;  
+        height: 60px ; 
+        top: 70% ; 
+        left : 40% ;       
+        transition: all 0.5s ; 
+        opacity : 0 ;            
+    }  
+
+    .chatube:hover .play{
+        opacity : 1 ; 
     }
+
+
+
+
+
+
+
+
+ 
 
 
 .contents {
@@ -410,13 +440,14 @@ nav:hover .w100 {
     opacity: 0;
     transition: height 0.5s ease-in-out ; 
     font-size: 36px;
-    color: rgb(45, 40, 40) ; 
-    font-weight: 400;
+    color: #2d2828 ; 
+    font-weight: 500;
     padding: 60px;
     text-align: justify;
-    line-height : 2.88em ;
-
+    line-height : 2.88em ; 
 }
+
+ 
 
 .content1:hover .more1 {
     opacity: 1;
@@ -535,6 +566,7 @@ footer{
     width: 100% ; 
     height: 320px ; 
     background-color: #483d3d; 
+    color : #191919 ; 
 } 
 
 .foot{
