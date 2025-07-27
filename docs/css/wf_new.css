@@ -281,7 +281,36 @@ nav:hover .w100 {
 
    
 
-    /* 크기 */   
+    /* 크기 */    
+
+    .deco{
+  position: absolute;
+  width: 40vw; /* viewport 너비의 40% */
+  max-width: 500px;
+  height: auto;
+  z-index: 100; 
+  left: 10%;
+  top: 10%;  
+  transition: all 1s ; 
+    }  
+
+  .deco:hover  img{
+      filter: drop-shadow(0 10px 30px #2950dd88) brightness(1.5);      
+  }
+   
+
+    .deco img{
+        width : 100% ; 
+        height : auto ; 
+        display: block;
+
+    } 
+
+
+
+
+
+
 
 .arrow {
   position: absolute;
@@ -625,7 +654,7 @@ footer{
 
 .foot{
     width: 100% ; 
-    max-width: 1200px;  
+    max-width: 1440px;  
     height: 280px ; 
     margin: auto;  
     display: grid ;  
