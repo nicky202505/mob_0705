@@ -263,7 +263,7 @@ nav:hover .w100 {
    /*  종횡비 설정  */  
      overflow: hidden; 
      /* 잘린 부분 감춤 */
-     margin-top: 280px; }
+     margin-top: 280px; } 
 
 
 
@@ -279,13 +279,74 @@ nav:hover .w100 {
     /* 비율 유지하며 영역 가득 채우기 */
     object-position: center center; }   
 
+   
+
+    /* 크기 */   
+
+.arrow {
+  position: absolute;
+  width: 12vw; /* viewport 너비의 12% */
+  max-width: 120px;
+  height: auto;
+  z-index: 100;  
+}
+
+.icon_event{
+  position: absolute;
+  width: 20vw; /* viewport 너비의 20% */
+  max-width: 120px;
+  height: auto;
+  z-index: 100;
+
+}
+
+/* 위치 */  
 
 
-    .arrow{
+.arrow {
+  left: 50%;
+  top: 75%;
+  transform: translateX(-50%);
+}
+
+
+
+.icon_event {
+  top: 5%;
+  right: 20%; /* 또는 left: 80%; 와 같이 조절 가능 */
+}    
+
+
+
+
+
+.icon_event img,
+.arrow img {
+  width: 100%;
+  height: auto;
+  display: block;   }
+
+
+  /*  미디어쿼리  */
+@media screen and (max-width: 768px) {
+    .icon_event {
+        top: 2%;
+        right: 2%;
+        width: 60px;
+    }
+
+    .arrow {
+        bottom: 2%;
+        width: 40px;
+    } 
+}
+
+
+/*     .arrow{
         position: absolute ; 
         width: 200px ; 
         height: auto ; 
-        left : 1700px ;  
+        left : 1050px ;  
         top : 660px ; 
     }
 
@@ -293,11 +354,11 @@ nav:hover .w100 {
         width : 100% ; 
         height: auto ; 
         display : block ; 
-        z-index : 100 ;  
+        z-index : 1000 ; 
     }
+ */ 
  
- 
-.icon_event {  
+/* .icon_event {  
   position: absolute ;   
   width : 250px;  
   height : auto ;  
@@ -312,8 +373,10 @@ nav:hover .w100 {
     height: auto ; 
     display : block ;      
     }
-
+ */
 /* 컨텐츠 섹션 */ 
+
+
 
 .bigbox{
     width: 100% ; 
